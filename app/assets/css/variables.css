@@ -1,0 +1,108 @@
+/* ============================================
+   Design Tokens — Physical Paper Portfolio
+   ============================================ */
+
+:root {
+  /* ── Section Backgrounds (subtle atmosphere shifts) ── */
+  --bg-hero: #FFFFFF;          /* Pure white */
+  --bg-showcase: #F8F9FA;      /* Cool light gray */
+  --bg-gallery: #F1F3F5;       /* Cooler blue-gray */
+  --bg-contact: #FFFFFF;       /* Pure white */
+
+  /* ── Surface Layers ── */
+  --surface-paper: #FFFFFF;     /* Pure white folder/card */
+  --surface-matte: #F8F9FA;    /* Cool gray folder tab */
+  
+  /* ── Vibrant Folder Colors ── */
+  --folder-1: #2563EB; /* Electric Blue */
+  --folder-2: #FF5A5F; /* Neon Peach/Coral */
+  --folder-3: #059669; /* Emerald Green */
+  --folder-4: #7C3AED; /* Bright Violet */
+  --folder-text-light: #FFFFFF;
+
+  /* ── Text Colors ── */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #6B6B6B;
+  --color-text-tertiary: #9E9E9E;
+  --color-text-muted: #B8B8B8;
+
+  /* ── Accent ── */
+  --color-accent: #2563EB;
+  --color-accent-soft: rgba(37, 99, 235, 0.08);
+
+  /* ── Borders ── */
+  --color-border: rgba(0, 0, 0, 0.06);
+  --color-border-hover: rgba(0, 0, 0, 0.12);
+
+  /* ── Typography Scale (fluid) ── */
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-mono: 'Manrope', system-ui, sans-serif; /* Enforcing 2-font rule */
+
+  --text-massive: clamp(3.5rem, 7vw, 8rem);
+  --text-h1: clamp(2.5rem, 5vw, 5rem);
+  --text-h2: clamp(2rem, 4vw, 3.5rem);
+  --text-h3: clamp(1.5rem, 3vw, 2.5rem);
+  --text-h4: clamp(1.25rem, 2vw, 1.75rem);
+  --text-body-large: clamp(1.125rem, 1.5vw, 1.25rem);
+  --text-body: clamp(0.9375rem, 1.2vw, 1.0625rem);
+  --text-caption: clamp(0.75rem, 1vw, 0.875rem);
+  --text-micro: 0.6875rem;
+
+  /* ── Spacing Scale ── */
+  --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+  --space-sm: clamp(0.5rem, 1vw, 1rem);
+  --space-md: clamp(1rem, 2vw, 2rem);
+  --space-lg: clamp(2rem, 4vw, 4rem);
+  --space-xl: clamp(3rem, 6vw, 6rem);
+  --space-2xl: clamp(4rem, 8vw, 8rem);
+  --space-3xl: clamp(6rem, 12vw, 12rem);
+
+  /* ── Paper Shadows (realistic stacked depth) ── */
+  --shadow-paper: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03);
+  --shadow-folder: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-stack: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-lifted: 0 16px 48px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.1);
+
+  /* ── Easing Curves ── */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* ── Durations ── */
+  --duration-fast: 0.2s;
+  --duration-normal: 0.4s;
+  --duration-slow: 0.8s;
+  --duration-slower: 1.2s;
+
+  /* ── Border Radius ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 100px;
+  --radius-round: 50%;
+
+  /* ── Z-Index Layers ── */
+  --z-base: 0;
+  --z-content: 10;
+  --z-nav: 100;
+  --z-cursor: 9999;
+  --z-overlay: 1000;
+
+  /* ── Grid ── */
+  --grid-max-width: 1200px;
+  --grid-gutter: clamp(1.5rem, 3vw, 3rem);
+}
+
+/* ── Reduced Motion Overrides ── */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0s;
+    --duration-normal: 0s;
+    --duration-slow: 0s;
+    --duration-slower: 0s;
+  }
+}
