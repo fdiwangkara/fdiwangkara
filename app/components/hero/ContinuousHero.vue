@@ -193,8 +193,8 @@ useGsapContext(heroRef, ({ gsap }) => {
 }
 
 .logo-binus {
-  transform: scale(1.5);
-  margin: 0 1rem;
+  height: 96px;
+  margin: 0 0.5rem;
 }
 
 @media (max-width: 600px) {
@@ -208,12 +208,12 @@ useGsapContext(heroRef, ({ gsap }) => {
   }
   
   .company-logo {
-    height: 32px;
+    height: 28px;
   }
   
   .logo-binus {
-    transform: scale(1.3);
-    margin: 0 0.5rem;
+    height: 44px;
+    margin: 0;
   }
 }
 </style>
