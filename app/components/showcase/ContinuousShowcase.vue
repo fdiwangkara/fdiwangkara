@@ -439,6 +439,7 @@ useGsapContext(sectionRef, ({ gsap }) => {
     flex: 1;
     overflow-y: auto;
     padding: 24px;
+    padding-bottom: 48px;
   }
   
   .doc-title {
@@ -457,7 +458,7 @@ useGsapContext(sectionRef, ({ gsap }) => {
   
   .doc-cta {
     margin-top: 24px;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
   }
 }
 </style>

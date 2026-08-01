@@ -12,6 +12,13 @@ const images = [
   'foto5.JPG', 'foto6.JPG', 'foto7.JPG', 'foto8.JPG'
 ]
 
+const refreshScrollTrigger = () => {
+  if (typeof window !== 'undefined') {
+    // This tells GSAP to recalculate dimensions (invalidateOnRefresh)
+    window.dispatchEvent(new Event('resize'))
+  }
+}
+
 useGsapContext(sectionRef, ({ gsap }) => {
   if (!trackRef.value) return
 
@@ -56,6 +63,7 @@ useGsapContext(sectionRef, ({ gsap }) => {
             :alt="`Visual ${i + 1}`" 
             format="webp"
             loading="lazy"
+            @load="refreshScrollTrigger"
           />
         </div>
       </div>
