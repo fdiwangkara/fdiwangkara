@@ -147,8 +147,15 @@ const cursorStyle = computed(() => {
       </text>
       <defs>
         <path ref="pathRef" :id="pathId" :d="pathD" fill="none" stroke="transparent" />
+        <linearGradient id="techStackGrad" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#4facfe" />
+          <stop offset="25%" stop-color="#00f2fe" />
+          <stop offset="50%" stop-color="#43e97b" />
+          <stop offset="75%" stop-color="#38f9d7" />
+          <stop offset="100%" stop-color="#4facfe" />
+        </linearGradient>
       </defs>
-      <text xml:space="preserve" :class="className" fill="var(--color-text-tertiary)">
+      <text xml:space="preserve" :class="className" fill="url(#techStackGrad)">
         <textPath ref="textPathRef" :href="`#${pathId}`" :startOffset="offset + 'px'" xml:space="preserve">
           {{ totalText }}
         </textPath>
@@ -171,7 +178,7 @@ const cursorStyle = computed(() => {
   aspect-ratio: 100 / 12;
   overflow: visible;
   display: block;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: 64px;
   font-family: var(--font-display), sans-serif;
   user-select: none;
   -moz-user-select: none;

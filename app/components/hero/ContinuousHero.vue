@@ -88,7 +88,7 @@ useGsapContext(heroRef, ({ gsap }) => {
 
       <div class="logo-static mt-12">
         <div class="static-track">
-          <img src="/images/binuslogo.png" alt="Binus University" class="company-logo" style="transform: scale(1.5); margin: 0 1rem;" />
+          <img src="/images/binuslogo.png" alt="Binus University" class="company-logo logo-binus" />
           <span class="static-item text-caption text-secondary">&bull;</span>
           <img src="/images/acmelogo.png" alt="Acme" class="company-logo" />
           <span class="static-item text-caption text-secondary">&bull;</span>
@@ -190,5 +190,30 @@ useGsapContext(heroRef, ({ gsap }) => {
 .company-logo:hover {
   opacity: 1;
   filter: grayscale(0%) brightness(1);
+}
+
+.logo-binus {
+  transform: scale(1.5);
+  margin: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .logo-static {
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .static-track {
+    gap: 1rem;
+  }
+  
+  .company-logo {
+    height: 32px;
+  }
+  
+  .logo-binus {
+    transform: scale(1.3);
+    margin: 0 0.5rem;
+  }
 }
 </style>
